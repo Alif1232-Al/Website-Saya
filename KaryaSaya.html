@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jasa Joki Tugas Murah</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-7qu0atU9+eYEEU0jQzQFJGx37PpB5I6Ug4fJGJr19BuC7lv/K8XrWHr1dJGUL3eg" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            border-radius: -10%;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-top: -30px;
+        }
+        
+        header h1 {
+            margin: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .highlight {
+            color: #0e6061;
+        }
+        
+        .navigation-card {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgb(255, 255, 255);
+            padding: 5px 5px;
+            border-radius: 50px;
+            transform: translate(530px);
+            margin-top: 30px;
+        }
+        
+        .tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 10px;
+            overflow: hidden;
+            background-color: rgb(252, 252, 252);
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 0px;
+        }
+        
+        .tab:hover {
+            background-color: rgb(227, 223, 223);
+            margin-top: 10%;
+            margin-top: 20px;
+        }
+        /*batas tah*/
+        
+        .tab:hover+.navigation-card {
+            transform: translate(530px, 10px);
+            /* Sesuaikan pergeseran vertikal yang diinginkan */
+        }
+        /*batas tah*/
+        
+        main {
+            padding: 30px;
+        }
+        
+        main h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        main p {
+            line-height: 1.6;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card {
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1.5rem;
+            background-color: rgba(0, 0, 0, 1);
+            padding: 1.5rem;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .price {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .lists {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 0.75rem;
+            row-gap: 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .list {
+            display: flex;
+            align-items: center;
+        }
+        
+        .list svg {
+            height: 1rem;
+            width: 1rem;
+        }
+        
+        .list span {
+            margin-left: 1rem;
+        }
+        
+        .action {
+            margin-top: 2rem;
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 1);
+            border-radius: 9999px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 0.625rem 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 1);
+            outline: none;
+            text-decoration: none;
+            transition: all .2s ease;
+            margin-left: -8%;
+        }
+        
+        .action:hover {
+            color: rgba(255, 255, 255, 1);
+            background-color: transparent;
+        }
+        /*Y allah tolong*/
+        
+        .card-container {
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1.5rem;
+            background-color: rgba(0, 0, 0, 1);
+            padding: 1.5rem;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+            transform: translate(400px);
+            margin-top: -43.5%;
+        }
+        
+        .price {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .lists {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 0.75rem;
+            row-gap: 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .list {
+            display: flex;
+            align-items: center;
+        }
+        
+        .list svg {
+            height: 1rem;
+            width: 1rem;
+        }
+        
+        .list span {
+            margin-left: 1rem;
+        }
+        
+        .action {
+            margin-top: 2rem;
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 1);
+            border-radius: 9999px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 0.625rem 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 1);
+            outline: none;
+            text-decoration: none;
+            transition: all .2s ease;
+        }
+        
+        .action:hover {
+            color: rgba(255, 255, 255, 1);
+            background-color: transparent;
+        }
+        /*pembatas*/
+        
+        button {
+            height: 4em;
+            width: 15em;
+            border: none;
+            border-radius: 40px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        
+        button span {
+            z-index: 1;
+            display: inline-block;
+            background-color: black;
+            height: 3em;
+            width: 11.5em;
+            border-radius: 25px;
+            color: #fff;
+            line-height: 55px;
+            font-size: 18px;
+            letter-spacing: 3px;
+            transition: all 0.5s;
+            transform: translate(1050px);
+        }
+        
+        button .container {
+            z-index: -1;
+            width: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            transform: translateY(-50px);
+            transition: all 0.4s;
+            transform: translate(1050px);
+        }
+        
+        button .container svg {
+            padding: 0 10px;
+        }
+        
+        button:hover span {
+            width: 0;
+        }
+        
+        button:hover .container {
+            z-index: 2;
+            width: 100%;
+        }
+        
+        .card-container-promo {
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1.5rem;
+            background-color: rgba(0, 0, 0, 1);
+            padding: 1.5rem;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+            transform: translate(800px);
+            margin-top: -43.5%;
+        }
+        
+        .price {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .lists {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 0.75rem;
+            row-gap: 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .list {
+            display: flex;
+            align-items: center;
+        }
+        
+        .list svg {
+            height: 1rem;
+            width: 1rem;
+        }
+        
+        .list span {
+            margin-left: 1rem;
+        }
+        
+        .action {
+            margin-top: 2rem;
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 1);
+            border-radius: 9999px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 0.625rem 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 1);
+            outline: none;
+            text-decoration: none;
+            transition: all .2s ease;
+        }
+        
+        .action:hover {
+            color: rgba(255, 255, 255, 1);
+            background-color: transparent;
+        }
+        /*sosial icon*/
+        /*sosial ikon*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif; ">Jasa Pembuatan Website Murah<span class="highlight ">#WebsiteMagic</span></h1>
+        <div class="navigation-card">
+            <a href="index.html" class="tab">
+                <svg class="svgIcon" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+                  stroke="black"
+                  stroke-width="7"
+                ></path>
+              </svg>
+            </a>
+
+            <a href="tentangSaya.html" class="tab">
+                <svg width="104" height="100" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                  x="21.5"
+                  y="3.5"
+                  width="60"
+                  height="60"
+                  rx="30"
+                  stroke="black"
+                  stroke-width="7"
+                ></rect>
+                <g clip-path="url(#clip0_41_27)">
+                  <mask
+                    id="mask0_41_27"
+                    style="mask-type:luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="61"
+                    width="104"
+                    height="52"
+                  >
+                    <path
+                      d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                      fill="white"
+                    ></path>
+                  </mask>
+                  <g mask="url(#mask0_41_27)">
+                    <path
+                      d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                      fill="black"
+                    ></path>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_27">
+                    <rect
+                      width="104"
+                      height="39"
+                      fill="white"
+                      transform="translate(0 61)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a href="http://www.instagram.com/afrizadv_/" class="tab">
+                <svg width="101" height="114" viewBox="0 0 101 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="46.1726"
+                  cy="46.1727"
+                  r="29.5497"
+                  transform="rotate(36.0692 46.1726 46.1727)"
+                  stroke="black"
+                  stroke-width="7"
+                ></circle>
+                <line
+                  x1="61.7089"
+                  y1="67.7837"
+                  x2="97.7088"
+                  y2="111.784"
+                  stroke="black"
+                  stroke-width="7"
+                ></line>
+              </svg>
+            </a>
+        </div>
+
+    </header>
+
+    <!---pembatas header-->
+    <main>
+        <h2>Buat usahamu jadi lebih fleksibel</h2>
+        <p>Dengan website responsif dan memiliki banyak function didalamnya membuat client anda menjadi semakin tertarik dengan produk anda. Kembangkan bisnis anda dengan website yang modern dan desain yang elegan, tentunya dengan harga yang terjangkau dan
+            ramah untuk umkm yang sedang merintis usaha dari awal menggunakan website untuk memasarkan produknya.</p>
+        <h2>Service</h2>
+        <ul>
+            <li>Custom website responsif</li>
+            <li>E-commerce</li>
+            <li>Murah dan terjangkau</li>
+            <li>Pembuatan Rab (Rangkaian anggaran bangunan)</li>
+            <li>Konsultasi Rab dan desain rumah 2d</li>
+            <li>Copy writing</li>
+            <li>Content management systems (CMS)</li>
+            <li>Mobile-friendly and responsive design</li>
+            <li>Jasa joki tugas terjangkau (semua jurusan)</li>
+            <li>Pelayanan 24/7</li>
+        </ul>
+        <h2>Price-List Website & Jasa Joki Tugas</h2>
+        <p>Ready beberapa pilihan desain dan joki tugas sma, smk, dan tugas kuliah</p>
+        <div class="card ">
+            <p class="price ">
+                100k
+
+            </p>
+            <ul class="lists ">
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Untuk usaha dan desain sesuai keinginan </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Garansi 1 minggu</span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Harga mengikuti request dari pembeli </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Bonus </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Free hosting  </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Cloud service 24/7 </span>
+                </li>
+            </ul>
+            <a href="https://wa.me/6287714049348 " class="action ">
+              Cuss beli
+            </a>
+        </div>
+        <!--Pembatas anjing-->
+        <div class="card-container ">
+            <p class="price ">
+                50k
+            </p>
+            <ul class="lists ">
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Tugas science </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span>Makalah</span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Grafik fisika murni menggunakan python </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Program kasir </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Algoritma struktur data </span>
+                </li>
+                <li class="list ">
+                    <svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 "><g stroke-width="0 " id="SVGRepo_bgCarrier "></g><g stroke-linejoin="round " stroke-linecap="round " id="SVGRepo_tracerCarrier "></g><g id="SVGRepo_iconCarrier
+    "> <path fill="#ffffff " d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911
+    16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z " clip-rule="evenodd " fill-rule="evenodd "></path> </g></svg>
+                    <span> Cloud service 24/7 </span>
+                </li>
+            </ul>
+            <a href="http://wa.me/6287714049348 " class="action ">
+              Cuss beli
+            </a>
+        </div>
+        <div class="card-container-promo">
+            <p class="price">
+                Promo
+            </p>
+            <ul class="lists">
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span> Joki Makalah</span>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span> Joki power point </span>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span> pembuatan Rab (rangkaian anggaran biaya) </span>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span> desain rumah 2d </span>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span> Bonus </span>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                    <span>  Cloud service 24/7  </span>
+                </li>
+            </ul>
+            <a href="http://wa.me/6287714049348" class="action">
+             Cuss beli
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Copyright &copy; AfrizaDv 2023. All rights reserved.</p>
+
+    </footer>
+
+
+</body>
+
+</html>

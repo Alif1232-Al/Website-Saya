@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="tentangSaya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 style="text-align: center; color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: 30px; transform: translate(-420px);">About Me</h1>
+        <div class="toggle-button" id="toggleButton">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="logo">
+            <img src="logoebot/logoebol.png" alt="logo situs">
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="back-button" id="backButton">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="KaryaSaya.html">Jasa</a>
+        <a href="puisi.html">Skills</a>
+        <a href="ondex.html">Contact me</a>
+    </div>
+    <!---konten batas-->
+
+    <div class=" about-me ">
+        <img src="logo1/logoAh.jpg " alt="Foto saya " class="profile-picture ">
+
+
+        <div class="about-text ">
+            <h1 style="color: rgb(22, 90, 102);">Selamat datang di situs saya!</h1>
+            <p>Saya adalah seorang mahasiswa semester 2 dengan minat dalam mobile apps dan pengembangan web.</p>
+            <p>Saya berkomitmen untuk memberikan kualitas terbaik dalam setiap proyek yang saya kerjakan.</p>
+            <p>Saya memiliki pengalaman dalam beberapa bidang, seperti:</p>
+            <ul>
+                <li><strong class="highlight">Pemrograman web</strong></li>
+                <li><strong class="highlight">Pemasaran digital</strong></li>
+                <li><strong class="highlight">Copy writing </strong></li>
+            </ul>
+            <p>Saya senang mengambil tantangan dan selalu meningkatkan keterampilan saya dengan melakukan penelitian dan pengembangan diri.</p>
+            <p>Saya juga menyukai bekerja sama dengan orang lain dan senang mengambil bagian dalam tim yang baik.</p>
+            <p>Saya percaya bahwa kreativitas dan inovasi lebih baik dicapai melalui kerja sama dan komunikasi yang baik.</p>
+
+        </div>
+    </div>
+    </section>
+    <!---konten img-->
+
+
+    </div>
+    <!---batas konten img-->
+    </div>
+    <!---konten batas--->
+    <!---file java dibawah ini yaa Al--->
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const sidebar = document.getElementById('sidebar');
+        const backButton = document.getElementById('backButton');
+        const content = document.querySelector('.content');
+
+        toggleButton.addEventListener('click', function() {
+            sidebar.classList.toggle('open');
+            content.classList.toggle('open');
+        });
+
+        backButton.addEventListener('click', function() {
+            sidebar.classList.remove('open');
+            content.classList.remove('open');
+        });
+    </script>
+    <!---batasan java end-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p style="color: antiquewhite; font-family: 'Times New Roman', Times, serif;">&copy; 2024 Alif Afriza</p>
+            <ul class="social-icons">
+                <li><a href="https://wa.me/6287714049348"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://twitter.com/afrezeh25288492"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram/afrizadv/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@pejuangskom_?lang=en"><i class="fab fa-tiktok"></i></a></li>
+                <!-- Tambahkan ikon media sosial lainnya jika diperlukan -->
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>

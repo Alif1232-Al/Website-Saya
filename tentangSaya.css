@@ -1,0 +1,463 @@
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f9fa;
+        padding: 3rem;
+    }
+    /*batasan*/
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #226762;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .header h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
+        transform: translate(200px);
+    }
+    
+    #toggleButton {
+        transform: translate(-1090px);
+    }
+    
+    @media screen and (max-width: 768px) {
+        .header h1 {
+            font-size: 1.2rem;
+        }
+    }
+    /*batasam*/
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #444;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #444;
+        border-bottom: 2px solid #444;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        color: #333;
+    }
+    
+    .highlight {
+        color: #5e5c5c;
+        font-style: italic;
+    }
+    
+    blockquote {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+        color: #666;
+        border-left: 2px solid #444;
+        padding-left: 1rem;
+        font-style: italic;
+    }
+    /* Social media icons animation */
+    
+    .social-icon {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 2rem;
+        margin-right: 1rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: translateY(-5px);
+    }
+    /* Hover transition for background element */
+    
+    .container {
+        background-color: #333;
+        color: #fff;
+        padding: 3rem;
+        transition: background-color 0.3s ease;
+    }
+    
+    .container:hover {
+        background-color: #444;
+    }
+    /* Centering a span */
+    
+    .center-span {
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+        width: fit-content;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: #333;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    .center-span:hover {
+        background-color: #444;
+    }
+    /* List alignment */
+    
+    ul {
+        margin-left: 1.5rem;
+        list-style: disc;
+        padding-left: 1.5rem;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        color: #333;
+    }
+    /* Underline in CSS */
+    
+    .underline-on-hover {
+        text-decoration: none;
+        border-bottom: 1px solid #333;
+        transition: border-bottom 0.3s ease;
+    }
+    
+    .underline-on-hover:hover {
+        border-bottom: 2px solid #444;
+    }
+    /* Object fit property */
+    
+    .container-object-fit {
+        width: 100%;
+        height: auto;
+    }
+    
+    .object-fit-cover {
+        object-fit: cover;
+    }
+    /* List of CSS colors */
+    
+    .color-light {
+        background-color: #ececec;
+    }
+    
+    .color-dark {
+        background-color: #333;
+        color: #fff;
+    }
+    /* Responsive text */
+    
+    .responsive-text {
+        font-size: 1.5rem;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    
+    .text-container-small {
+        font-size: 0.8rem;
+        /*batasan modifikasi*/
+    }
+    /*batasan modifikasi*/
+    
+    .header {
+        background-color: #226762;
+        color: #ffffff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: auto;
+        margin-left: 50px;
+    }
+    
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        /* Menyembunyikan sidebar secara default */
+        background-color: #333;
+        transition: left 0.3s ease;
+        /* Efek transisi ketika sidebar bergerak */
+    }
+    
+    .content {
+        margin-left: 0;
+        /* Menggeser konten utama jika sidebar terbuka */
+    }
+    
+    .sidebar.open {
+        left: 0;
+        /* Menampilkan sidebar ketika kelas "open" ditambahkan */
+    }
+    
+    .content.open {
+        margin-left: 200px;
+        /* Menggeser konten utama jika sidebar terbuka */
+    }
+    /*pembatas*/
+    
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        /* Lebar sidebar */
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Menyembunyikan sidebar di luar layar */
+        background-color: #333;
+        padding-top: 20px;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        /* Efek transisi saat sidebar bergerak */
+        z-index: 1000;
+        /* Untuk memastikan sidebar tumpang tindih dengan konten */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        /* Bayangan untuk efek kedalaman */
+    }
+    /* Link di sidebar */
+    
+    .sidebar a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: background-color 0.3s, color 0.3s;
+        /* Efek transisi hover */
+    }
+    /* Efek hover pada link */
+    
+    .sidebar a:hover {
+        background-color: #226762;
+    }
+    /* Konten utama akan bergeser ke kanan saat sidebar terbuka */
+    
+    .content {
+        margin-left: 0;
+    }
+    /* Sidebar terbuka */
+    
+    .sidebar.open {
+        left: 0;
+        /* Sidebar akan muncul */
+    }
+    /* Konten utama bergeser ketika sidebar terbuka */
+    
+    .content.open {
+        margin-left: 250px;
+        /* Menggeser konten utama saat sidebar terbuka */
+    }
+    /*css toggle*/
+    
+    .toggle-button {
+        display: inline-block;
+        cursor: pointer;
+        transform: translate(-600px);
+    }
+    
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    /* Rotate lines for toggle effect */
+    
+    .toggle-button.open .line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .toggle-button.open .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .toggle-button.open .line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .sidebar .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #226871;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+        transform: translate(190px);
+        margin-top: -20px;
+    }
+    
+    .sidebar .back-button:hover {
+        color: #3E9E94;
+    }
+    /*toggle button css1*/
+    
+    .about-me {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    /*animasi foto*/
+    
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+            /* Awal posisi */
+        }
+        50% {
+            transform: translateY(20px);
+            /* Bergerak ke kanan */
+        }
+        100% {
+            transform: translateY(0);
+            /* Kembali ke posisi awal */
+        }
+    }
+    
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        /* Biasa konten img */
+        animation: moveUpDown 2s ease-in-out infinite;
+        /* Animasi bergerak */
+        margin-top: -29px;
+    }
+    /*animasi foto end*/
+    
+    .right-aligned {
+        margin-right: 40%;
+        transform: translate(230px);
+    }
+    /*deks*/
+    
+    .about-me {
+        position: relative;
+        /* Atur posisi relatif untuk kontainer */
+    }
+    /*butot ngentot*/
+    /*butot ngentot*/
+    
+    .about-text {
+        transform: translate(-140px);
+        border-radius: 30%;
+        display: inline-block;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #1e676b;
+        transform: translate(-10px);
+        margin-top: -10px;
+        font-family: source sans pro;
+    }
+    
+    #tentang-saya {
+        background-color: #f0f0f0;
+        /* Warna  belakang */
+        padding: 20px;
+        /* Padding berikan ruang di sekitar konten */
+        border-radius: 10px;
+        /* Sudut bulat elemen */
+        margin-top: 20px;
+    }
+    
+    #tentang-saya h2 {
+        text-align: center;
+        /* Pusatkan teks judul */
+        color: #333;
+        /* Warna teks judul */
+        font-family: 'Times New Roman', Times, serif;
+        color: #f0f0f0;
+        background-color: #1e676b;
+        border-radius: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 80px;
+    }
+    
+    #tentang-saya p {
+        text-align: justify;
+        /* Ratakan teks paragraf */
+        color: #666;
+        /* Warna teks paragraf */
+        margin-top: -20px;
+    }
+    /*footer*/
+    /*logo sosial*/
+    
+    .social-icons {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 15px;
+        transform: translate(20px);
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+        margin-right: 0;
+    }
+    
+    .social-icons a {
+        color: #fff;
+        font-size: 20px;
+    }
+    /*logo sosial end*/
+    /*footer batasan*/
+    
+    .footer {
+        background-color: #174046;
+        color: #fff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+        top: 30px;
+        border-radius: 30px;
+        box-shadow: #333;
+    }
+    
+    .footer-content {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-content p {
+        margin: 0;
+    }
+    /*footer batasan*/
